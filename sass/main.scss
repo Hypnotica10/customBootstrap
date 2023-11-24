@@ -2,10 +2,10 @@ $primary: #141313;
 
 @import '../node_modules/bootstrap/scss/functions';
 @import '../node_modules/bootstrap/scss/variables';
-@import '../node_modules/bootstrap/scss/variables-dark';
-@import '../node_modules/bootstrap/scss/maps';
-@import '../node_modules/bootstrap/scss/mixins';
-@import '../node_modules/bootstrap/scss/utilities';
+// @import '../node_modules/bootstrap/scss/variables-dark';
+// @import '../node_modules/bootstrap/scss/maps';
+// @import '../node_modules/bootstrap/scss/mixins';
+// @import '../node_modules/bootstrap/scss/utilities';
 
 $custom-theme-colors: (
     greyColor: #888888,
@@ -28,7 +28,7 @@ $custom-font-sizes: (
     50: 50px,
     80: 80px,
 );
-$font-sizes: map-merge($custom-font-sizes, $font-sizes);
+$font-sizes: map-merge($font-sizes, $custom-font-sizes);
 
 $custom-spacers: (
     6: 6px,
@@ -45,8 +45,10 @@ $custom-spacers: (
     40: 40px,
     50: 50px,
     100: 100px,
+    120: 120px,
     140: 140px,
 );
-$spacers: map-merge($custom-spacers, $spacers);
+$spacers: map-merge($map1: $custom-spacers, $map2: $spacers);
+
 
 @import '../node_modules/bootstrap/scss/bootstrap.scss';

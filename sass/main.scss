@@ -1,56 +1,61 @@
-$primary: #141313;
+$primary: #838383;
+$secondary: #7b35c8;
+$gradient: linear-gradient(75deg,var(--blue) 0%,var(--second-color) 100%);
 
 @import '../node_modules/bootstrap/scss/functions';
 @import '../node_modules/bootstrap/scss/variables';
-// @import '../node_modules/bootstrap/scss/variables-dark';
-// @import '../node_modules/bootstrap/scss/maps';
-// @import '../node_modules/bootstrap/scss/mixins';
-// @import '../node_modules/bootstrap/scss/utilities';
-
-$custom-theme-colors: (
-    greyColor: #888888,
-    orangeColor: #f19a36,
-);
-$theme-colors: map-merge($custom-theme-colors, $theme-colors);
-
 $custom-font-sizes: (
     10: 10px,
+    11: 11px,
+    12: 12px,
     13: 13px,
     14: 14px,
     15: 15px,
-    16: 16px,
     18: 18px,
     20: 20px,
     22: 22px,
-    24: 24px,
+    26: 26px,
     28: 28px,
-    36: 36px,
+    32: 32px,
     40: 40px,
-    50: 50px,
-    80: 80px,
+    65: 65px,
 );
-$font-sizes: map-merge($font-sizes, $custom-font-sizes);
+$font-sizes: map-merge($custom-font-sizes, $font-sizes);
 
 $custom-spacers: (
-    6: 6px,
+    2: 2px,
+    3: 3px,
+    4: 4px,
+    5: 5px,
+    7: 7px,
     8: 8px,
     10: 10px,
     12: 12px,
     13: 13px,
     15: 15px,
-    16: 16px,
     20: 20px,
     25: 25px,
     30: 30px,
-    36: 36px,
+    35: 35px,
     40: 40px,
-    50: 50px,
+    60: 60px,
+    63: 63px,
     70: 70px,
-    100: 100px,
-    120: 120px,
-    140: 140px,
+    96: 96px,
 );
 $spacers: map-merge($map1: $custom-spacers, $map2: $spacers);
+@import '../node_modules/bootstrap/scss/variables-dark';
+@import '../node_modules/bootstrap/scss/maps';
+@import '../node_modules/bootstrap/scss/utilities';
+
+
+$custom-theme-colors: (
+    borderColor: #cccccc,
+    blueColor: #0098ff,
+);
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+
 
 
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
